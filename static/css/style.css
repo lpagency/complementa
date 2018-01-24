@@ -80,6 +80,20 @@ li{
     bottom: 59px;
 }
 
+.titulo-politica{
+    font-size: 23px;
+    color: gray;
+}
+
+.desc-politica{
+    font-size: 18px;
+    color: gray;
+}
+
+.cont-politica{
+    width: 89%;
+}
+
 /*.titulo-about-3 {
  padding-left: 25px;
  padding-right: 25px;

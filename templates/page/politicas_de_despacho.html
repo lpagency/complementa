@@ -1,0 +1,91 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+ {% include '../home/header.html' %}
+{% end %}
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+
+      $("#OpenAlert").click();
+      // base_url 'http://localhost:8520/'
+      // checkout_url 'http://localhost:8522/'
+    var base_url = $.environmentVar(
+        'https://apibodegas.loadingplay.com/',
+        'https://apibodegas.loadingplay.com/',
+        'https://apibodegas.loadingplay.com/');
+    var checkout_url = $.environmentVar(
+        'https://pay.loadingplay.com',
+        'https://pay.loadingplay.com',
+        'https://pay.loadingplay.com');
+    var app_public = $.environmentVar(15,15,15);
+    
+        var config = {
+            'app_public' : app_public,
+            'base_url' : base_url,
+            'checkout_url': checkout_url,
+            'products_per_page' : 10,
+            'templateOrigin' : '#product_template',
+            'tag' : '',
+            'ignore_stock' : false,
+            'infinite_scroll': false,
+            'onLoad':function(){
+               $(".ellipsis").dotdotdot();
+             }
+        };
+        $('.products').ecommerce(config);
+
+        //  $(document).ecommerce({
+        //     'app_public' : app_public,
+        //     'animation' : 'simple',
+        //     'base_url' : base_url,
+        //     'checkout_url' : checkout_url,
+        //     'products_per_page' : 9
+        // });
+
+        
+
+        // destacado categoria 2
+        // config.tag = 'destacado_categoria2';
+        // $('.product-list2').ecommerce('product_box', config);
+    });
+</script>
+
+{% end %}
+
+
+{% block body %}
+{% if is_admin %}
+    {% set editabletext = 'editabletext' %}
+{% else %}
+    {% set editabletext = '' %}
+{% end %}
+
+<section>
+  <div class="clearfix" style="height: 150px">
+    
+  </div>
+  <div class="container cont-politica">
+    <div class="titulo-politica {{editabletext}}" text-id="{{ site.name + '_baj_li_no_2' }}"> {{ read_text(site.name +  '_baj_li_no_2') }} </div>
+  </div>
+
+  <div class="container cont-politica">
+    <div class="desc-politica {{editabletext}}" text-id="{{ site.name + '_baj_li_no_a' }}"> {{ read_text(site.name +  '_baj_li_no_a') }} </div>
+  </div>
+</section>
+
+
+
+
+{% include '../home/footer.html' %}
+
+{% end %}
+
