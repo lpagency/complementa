@@ -88,10 +88,15 @@ li{
 .desc-politica{
     font-size: 18px;
     color: gray;
+    margin-bottom: 50px;
 }
 
 .cont-politica{
     width: 89%;
+}
+
+.cont-politica-2{
+    min-height: 315px;
 }
 
 /*.titulo-about-3 {
