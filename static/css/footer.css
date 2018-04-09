@@ -130,7 +130,7 @@ a.a-footer{
     float: left;
     margin-top: -19px;
     margin-bottom: 0px;
-    object-fit: cover;
+    object-fit: contain;
     left: 3px;
     position: relative;
 }
@@ -448,6 +448,7 @@ img.editablelink.redes-sociales-2 {
     .img-foot {
     height: 102px;
     width: 200px;
+    object-fit: contain;
 }
 
 
