@@ -413,7 +413,7 @@ header.fixtop {
 	.caja-log {
     width: 240px;
     float: left;
-    margin-top: 14px;
+    margin-top: 1px;
     margin-bottom: 21px;
     position: absolute;
     z-index: 1030;
