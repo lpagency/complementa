@@ -58,7 +58,7 @@ div.image-upload.part1 {
     object-fit: contain;
     margin-bottom: 0px;
     padding-left: 0px;
-    top: 39px;
+    top: 5px;
 }
 
 .inf {
@@ -464,7 +464,7 @@ hr.lis {
     height: 91%;
     position: absolute;
     overflow: hidden;
-    top: 36px;
+    top: 5px;
     left: 0;
     opacity: 0;
     background-color: rgba(255, 255, 255, 0.53);
