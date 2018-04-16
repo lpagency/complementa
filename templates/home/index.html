@@ -21,8 +21,6 @@
     {
 
       $("#OpenAlert").click();
-      // base_url 'http://localhost:8520/'
-      // checkout_url 'http://localhost:8522/'
         var base_url = $.environmentVar(
             'https://apibodegas.loadingplay.com/',
             'https://apibodegas.loadingplay.com/',
@@ -38,7 +36,7 @@
             'checkout_url': checkout_url,
             'products_per_page' : 10,
             'templateOrigin' : '#product_template',
-            'tag' : '',
+            'tag' : 'home',
             'ignore_stock' : false,
             'infinite_scroll': false,
             'onLoad':function(){
@@ -46,20 +44,6 @@
              }
         };
         $('.products').ecommerce(config);
-
-        //  $(document).ecommerce({
-        //     'app_public' : app_public,
-        //     'animation' : 'simple',
-        //     'base_url' : base_url,
-        //     'checkout_url' : checkout_url,
-        //     'products_per_page' : 9
-        // });
-
-        
-
-        // destacado categoria 2
-        // config.tag = 'destacado_categoria2';
-        // $('.product-list2').ecommerce('product_box', config);
     });
 </script>
 
