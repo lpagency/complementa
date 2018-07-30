@@ -13,6 +13,4 @@
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(15,15,15);
-   
-
+    var app_public = $.environmentVar('complementa','complementa','complementa');

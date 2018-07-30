@@ -1,9 +1,9 @@
 /* global $ */
 'use strict';
 
-$(document).ready(function() 
+$(document).ready(function()
 {
-    
+
     var base_url = $.environmentVar(
         'https://apibodegas.loadingplay.com/',
         'https://apibodegas.loadingplay.com/',
@@ -12,12 +12,12 @@ $(document).ready(function()
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(15,15,15);
+    var app_public = $.environmentVar('complementa','complementa','complementa');
     var site_name = $.environmentVar('complementa', 'complementa', 'complementa');
 
-    // functions 
+    // functions
     // productos relacionados
-    var related = function(tag) 
+    var related = function(tag)
     {
         var config = {
             'app_public': app_public,
@@ -31,7 +31,7 @@ $(document).ready(function()
         $('.product-related').ecommerce('product_box', config);
     };
 
-    //cambia imagenes pequeñas en detalle de producto 
+    //cambia imagenes pequeñas en detalle de producto
     $(document).on("click", '.little', function(){
         $("#img_detail").attr("src", $(this).attr('src'));
     });
