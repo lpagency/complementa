@@ -26,7 +26,7 @@
                 var asunto = $("#itComentario").val();
 
                 var error_count = 0;
- 
+
                 // --- Condicionales anidados ----
                 //Si nombre está vacío
                 //Muestra el mensaje
@@ -72,7 +72,7 @@
                 {
                     return false;
                 }
- 
+
             });//click
         });//ready
 </script>
@@ -92,8 +92,8 @@
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(15,15,15);
-    
+    var app_public = $.environmentVar('complementa','complementa','complementa');
+
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -117,7 +117,7 @@
         //     'products_per_page' : 9
         // });
 
-        
+
 
         // destacado categoria 2
         // config.tag = 'destacado_categoria2';
@@ -170,10 +170,10 @@
     <!-- fin editar imagen -->
 
 
-            
+
             <div class="container contact product text-left  fondo-contact" style="display: inherit;">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="row">       
+                <div class="row">
 
                 <div class="container">
 
@@ -198,7 +198,7 @@
                         </div>
 
 
-                    </div>  
+                    </div>
                     <div class="col-xs-12 col-md-8 col-sm-12 align-form-contact fondo-contact">
 
                         <div>
@@ -220,8 +220,8 @@
                                         </div>
                                         <span id="helpBlock3" class="hidden help-block help-mail">Email</span>
                                     </div>
-                                </div>  
-                            </div>  
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label class="control-label">Mensaje</label>
                                 <div class="controls">
@@ -231,15 +231,15 @@
                             </div>
                             <p><button name="submit" id="bEnviar" type="submit" class="btn btn-store btn-block contact" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Email Sent">Enviar mensaje </button></p>
                             <input type="hidden" name="submitted" id="submitted3" value="true">
-                        </form> 
+                        </form>
                         </div>
                      </div>
-                    </div>      
-                </div>  
+                    </div>
+                </div>
             </div>
-            
-			
+
+
 
 	</div>
-{% include '../home/footer.html' %}		
+{% include '../home/footer.html' %}
 {% end %}

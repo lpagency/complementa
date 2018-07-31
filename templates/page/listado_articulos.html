@@ -26,8 +26,8 @@
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(15,15,15);
-    
+    var app_public = $.environmentVar('complementa','complementa','complementa');
+
         var config = {
             'app_public' : app_public,
             'base_url' : base_url,
@@ -51,7 +51,7 @@
         //     'products_per_page' : 9
         // });
 
-        
+
 
         // destacado categoria 2
         // config.tag = 'destacado_categoria2';
@@ -81,16 +81,16 @@
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_cate_li_nobu" name="image" id="img_banner_cate_li_nobu" >
                </div>
         {% end %}
-                <img id="{{ site.name }}_banner_cate_li_nobu" src="{{ read_image(site.name + '_banner_cate_li_nobu', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li_nobu',500) }}'" class="banner_uno_list hidden" alt="item">        
+                <img id="{{ site.name }}_banner_cate_li_nobu" src="{{ read_image(site.name + '_banner_cate_li_nobu', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li_nobu',500) }}'" class="banner_uno_list hidden" alt="item">
        </div>
-       
+
        <div class="col-md-12">
             <div class="box-text-gal">
                 <h1 class="text-center titulo {{editabletext}}" text-id="{{ site.name + '_til_li_no' }}"> {{ read_text(site.name +  '_til_li_no') }}</h1>
             </div>
 
         </div> -->
-    
+
 </section>
 
 
@@ -119,11 +119,11 @@
           {{ getArticleList(limit=1, html="page/article_home.html", tag='informacion,posicion 4') }}
         <!-- </div> -->
     </div>
-  
+
 </section>
 
 
-<!-- 
+<!--
 <section>
     <div class="container">
         <div class="row">
@@ -156,7 +156,7 @@
 
 </section> -->
 
-<!-- 
+<!--
 <section id="contenedor">
     <div class="container">
         <div class="row spa article_list">
