@@ -1,0 +1,32 @@
+{% extends "../base.html" %}
+
+{% block title %}
+  {{ site.name }}
+{% end %}
+
+{% block header %}
+  {% include '../home/header.html' %}
+{% end %}
+
+{% block body %}
+  {% if is_admin %}
+    {% set editabletext = 'editabletext' %}
+  {% else %}
+    {% set editabletext = '' %}
+{% end %}
+
+<section>
+  <div class="clearfix" style="height: 150px"></div>
+  <div class="container cont-politica">
+    <div class="titulo-politica {{editabletext}}" text-id="{{ site.name + '_terminos_condiciones' }}"> {{ read_text(site.name +  '_terminos_condiciones') }} </div>
+  </div>
+  <div class="container cont-politica cont-politica-2">
+    <div class="desc-politica {{editabletext}}" text-id="{{ site.name + '_terminos_condiciones2' }}">
+      {{ read_text(site.name +  '_terminos_condiciones2') }}
+    </div>
+  </div>
+</section>
+
+{% include '../home/footer.html' %}
+
+{% end %}
