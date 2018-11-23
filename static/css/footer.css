@@ -87,6 +87,11 @@ hr {
     width: 100%;
 }
 
+.pas-4 a:hover{
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
 .no-dot {
     position: relative;
     left: 200px;
